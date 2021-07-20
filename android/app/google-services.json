@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "993765069946",
+    "project_id": "alipapa-70401",
+    "storage_bucket": "alipapa-70401.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993765069946:android:92677824be9002bbb797c3",
+        "android_client_info": {
+          "package_name": "com.example.alipapa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993765069946-oaj63tjfqhu7q7khv6f0l9hgj9n3vmfv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alipapa",
+            "certificate_hash": "4bb0daf80523eb4bff164c95761d46940ba10f0b"
+          }
+        },
+        {
+          "client_id": "993765069946-k1faeej0f404i8t2ttbvp7f0cbf1ti0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXLf_GuSBcxNkqVWas5PULtuNgSEe01wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993765069946-k1faeej0f404i8t2ttbvp7f0cbf1ti0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
