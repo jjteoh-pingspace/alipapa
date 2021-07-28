@@ -1,4 +1,3 @@
-
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/services.dart';
 
@@ -7,14 +6,14 @@ abstract class INetworkInfo {
 }
 
 class NetworkInfo implements INetworkInfo {
-  final Connectivity _connectionChecker = Connectivity();
+  // final Connectivity _connectionChecker = Connectivity();
 
   @override
   Future<bool> get isConnected async {
     late ConnectivityResult result;
-    
+
     try {
-      result = await _connectionChecker.checkConnectivity();
+      result = await (Connectivity().checkConnectivity());
       return result != ConnectivityResult.none;
     } on PlatformException catch (e) {
       print('connection checker throws error: ');
