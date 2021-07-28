@@ -1,6 +1,6 @@
 # alipapa
 
-A project for learning Flutter.
+A project for learning Flutter(with TDD approach).
 
 ## Getting Started
 
