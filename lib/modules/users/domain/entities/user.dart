@@ -1,8 +1,18 @@
-
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:equatable/equatable.dart';
+import 'package:json_annotation/json_annotation.dart';
 
-enum UserType { customer, merchant }
+enum UserType {
+  @JsonValue("customer")
+  customer,
+  @JsonValue("merchant")
+  merchant
+}
+
+extension UserTypeExt on UserType {
+  String value() {
+    return this.toString().split('.').last;
+  }
+}
 
 class User extends Equatable {
   final String username;
@@ -10,13 +20,12 @@ class User extends Equatable {
   final String password;
   final UserType userType;
 
-  User({
-    required this.username,
-    required this.email,
-    required this.password,
-    required this.userType
-  });
+  User(
+      {required this.username,
+      required this.email,
+      required this.password,
+      required this.userType});
 
-  @override 
-  List<Object> get props => [username, email, password, userType]
+  @override
+  List<Object> get props => [username, email, password, userType];
 }
