@@ -34,8 +34,9 @@ dependencies:
   equatable: ^2.0.0
   # Exception and success handling
   either_dart: ^0.1.0
+  # connectivity
+  connectivity_plus: ^1.0.6
   # Remote API
-  data_connection_checker: ^0.3.4
   http: ^0.13.1
   # Local cache
   shared_preferences: ^2.0.0
